@@ -12,24 +12,40 @@ function Header() {
         </video>
 
         <Grid item xs={12}>
-          <Typography variant="h2">Amack</Typography>
-        </Grid>
-        <Grid item xs={12}>
-          <Typography variant="subtitle1">Currently: Egypt only</Typography>
-        </Grid>
-        <Grid item xs={12}>
-          <Typography variant="h5">The easiest way to dive</Typography>
-        </Grid>
-        <Grid item xs={12}>
-          <Typography variant="body1" style={{ margin: "auto", width: "50%" }}>
-            We are a new scuba trips booking application, that enables you to
-            find & compare different dive sites in Egypt, Pick your desired dive
-            centre & book your next dive trips!
+          <Typography variant="h2" style={{ margin: "150px" }}>
+            Amack
           </Typography>
         </Grid>
 
+        <Grid item={12} style={{ textAlign: "center" }}>
+          <Grid
+            item
+            xs={12}
+            style={{
+              margin: "auto",
+              textAlign: "left",
+            }}
+          >
+            <Typography variant="subtitle1">Currently: Egypt only</Typography>
+            <Typography variant="h5">The easiest way to dive</Typography>
+            <Typography
+              variant="body1"
+              style={{
+                width: "50%",
+              }}
+            >
+              We are a new scuba trips booking application, that enables you to
+              find & compare different dive sites in Egypt, Pick your desired
+              dive centre & book your next dive trips!
+            </Typography>
+          </Grid>
+        </Grid>
+
         <Grid item xs={12}>
-          <Button variant="outlined" style={{ borderRadius: "25px" }}>
+          <Button
+            variant="outlined"
+            style={{ borderRadius: "25px", margin: "250px" }}
+          >
             Learn More
           </Button>
         </Grid>

@@ -4,12 +4,9 @@ function Banner() {
   return (
     <div className="App">
       <Grid container>
-        <Grid item xs={12}>
+        <Grid item xs={12} style={{ margin: "50px" }}>
           <Typography variant="h5">Experience booking differently</Typography>
-        </Grid>
-
-        <Grid item xs={12}>
-          <Typography variant="h5">
+          <Typography variant="subtitle1">
             We Gather the .... Dive site & centre
           </Typography>
         </Grid>
