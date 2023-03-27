@@ -1,4 +1,6 @@
-import { Button, Grid, Link, Typography } from "@mui/material";
+import { Grid, Link, Typography } from "@mui/material";
+import front from "../resources/mobile amack1.png";
+import back from "../resources/mobile amack.png";
 
 function Download() {
   return (
@@ -51,12 +53,30 @@ function Download() {
           </Grid>
         </Grid>
         <Grid item xs={12} md={6}>
-          <Grid item xs={12} md={6}>
-            <img alt="phone front"></img>
-          </Grid>
-          <Grid item xs={12} md={6}>
-            <img alt="phone back"></img>
-          </Grid>
+          <img
+            src={back}
+            alt="phone back"
+            style={{
+              position: "relative",
+              width: "250px",
+              height: "500px",
+              top: "0",
+              right: "0",
+              zIndex: "1",
+            }}
+          ></img>
+          <img
+            src={front}
+            alt="phone front"
+            style={{
+              position: "relative",
+              width: "250px",
+              height: "500px",
+              left: "-125px",
+              top: "-50px",
+              zIndex: "2",
+            }}
+          ></img>
         </Grid>
       </Grid>
     </div>
