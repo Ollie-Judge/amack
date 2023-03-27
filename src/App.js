@@ -9,6 +9,7 @@ import FishLeft from "./components/fishLeft";
 import Reviews from "./components/reviews";
 import FishCentre from "./components/fishCentre";
 import Contact from "./components/contact";
+import Footer from "./components/footer";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
       <Reviews />
       <FishCentre />
       <Contact />
+      <Footer />
     </div>
   );
 }
