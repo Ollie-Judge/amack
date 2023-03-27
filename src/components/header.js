@@ -1,23 +1,32 @@
 import { Typography, Button, Grid } from "@mui/material";
+import background from "../resources/4k-sea-waves-on-the-beautiful-aerial-view-drone-2021-10-21-17-22-57-utc_Slomoss.mp4";
 
 function Header() {
   return (
     <div className="App">
       <Grid container alignItems="center">
-        <video loop autoPlay>
-          <source
-            src="public/resources/4k-sea-waves-on-the-beautiful-aerial-view-drone-2021-10-21-17-22-57-utc_Slomoss.mp4"
-            type="video/mp4"
-          />
-        </video>
-
-        <Grid item xs={12}>
-          <Typography variant="h2" style={{ margin: "150px" }}>
-            Amack
-          </Typography>
+        <Grid item xs={12} style={{ position: "absolute", zIndex: "1" }}>
+          <video loop autoPlay muted>
+            <source src={background} type="video/mp4" />
+          </video>
         </Grid>
 
-        <Grid item={12} style={{ textAlign: "center" }}>
+        <Grid
+          item
+          xs={12}
+          style={{
+            margin: "150px auto",
+            textAlign: "center",
+            zIndex: "2",
+          }}
+        >
+          <Typography variant="h2">Amack</Typography>
+        </Grid>
+
+        <Grid
+          item={12}
+          style={{ textAlign: "center", position: "absolute", zIndex: "2" }}
+        >
           <Grid
             item
             xs={12}
