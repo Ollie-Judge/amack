@@ -3,7 +3,7 @@ import { Button, Grid, TextField, Typography } from "@mui/material";
 function App() {
   return (
     <div className="App">
-      <Grid container>
+      <Grid container style={{ margin: "250px auto" }}>
         <Grid item xs={12} md={6}>
           <Grid item xs={12}>
             <TextField

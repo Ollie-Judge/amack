@@ -1,16 +1,25 @@
 import { Typography, Button, Grid } from "@mui/material";
+import "../style/header.css";
 import background from "../resources/4k-sea-waves-on-the-beautiful-aerial-view-drone-2021-10-21-17-22-57-utc_Slomoss.mp4";
 
 function Header() {
   return (
     <div className="App">
       <Grid container alignItems="center">
-        <Grid item xs={12} style={{ position: "absolute", zIndex: "1" }}>
-          <video loop autoPlay muted style={{ width: "100%" }}>
-            <source src={background} type="video/mp4" />
-          </video>
-        </Grid>
-
+        <video
+          loop
+          autoPlay
+          muted
+          style={{
+            position: "absolute",
+            zIndex: "1",
+            width: "100%",
+            borderBottomLeftRadius: "40% 30px",
+            borderBottomRightRadius: "40% 30px",
+          }}
+        >
+          <source src={background} type="video/mp4" />
+        </video>
         <Grid
           item
           xs={12}
@@ -29,17 +38,21 @@ function Header() {
           item
           xs={12}
           style={{
+            align: "center",
             margin: "auto",
-            textAlign: "center",
             zIndex: "2",
           }}
         >
-          <Typography variant="subtitle1">Currently: Egypt only</Typography>
-          <Typography variant="h5">The easiest way to dive</Typography>
+          <Typography variant="subtitle1" className="headerText">
+            Currently: Egypt only
+          </Typography>
+          <Typography variant="h4" className="headerText">
+            The easiest way to dive
+          </Typography>
           <Typography
             variant="body1"
+            className="headerText"
             style={{
-              textAlign: "center",
               width: "50%",
             }}
           >
@@ -52,7 +65,12 @@ function Header() {
         <Grid item xs={12}>
           <Button
             variant="outlined"
-            style={{ borderRadius: "25px", margin: "250px" }}
+            style={{
+              borderRadius: "25px",
+              textAlign: "center",
+              zIndex: "2",
+              color: "white",
+            }}
           >
             Learn More
           </Button>

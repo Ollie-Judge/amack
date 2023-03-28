@@ -44,8 +44,6 @@ function Contact() {
                   label="Email"
                   variant="outlined"
                 />
-              </Grid>
-              <Grid item xs={6}>
                 <TextField
                   id="outlined-basic"
                   label="Name"

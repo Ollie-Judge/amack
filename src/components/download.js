@@ -1,12 +1,27 @@
 import { Grid, Link, Typography } from "@mui/material";
 import front from "../resources/mobile amack1.png";
 import back from "../resources/mobile amack.png";
+import background from "../resources/4k-sea-waves-on-the-beautiful-aerial-view-drone-2021-10-21-17-22-57-utc_Slomoss.mp4";
 
 function Download() {
   return (
     <div className="App">
-      <Grid container style={{ margin: "150px auto" }}>
-        <Grid item xs={12} md={6}>
+      <Grid container style={{ margin: "15px auto 100px" }}>
+        <Grid item xs={12} style={{ position: "absolute", zIndex: "1" }}>
+          <video
+            loop
+            autoPlay
+            muted
+            style={{
+              width: "100%",
+              borderTopLeftRadius: "-40% -30px",
+              borderTopRightRadius: "-40% -30px",
+            }}
+          >
+            <source src={background} type="video/mp4" />
+          </video>
+        </Grid>
+        <Grid item xs={12} md={6} style={{ zIndex: "2" }}>
           <Grid item xs={12} style={{ textAlign: "left" }}>
             <Typography variant="h5">
               Download and share your experience
@@ -15,7 +30,7 @@ function Download() {
               Download our app and and share your experience
             </Typography>
           </Grid>
-          <Grid item xs={12}>
+          <Grid item xs={12} style={{ zIndex: "2" }}>
             <Link
               href="https://apps.apple.com/us/app/google/id284815942?itsct=apps_box_badge&amp;itscg=30200"
               style={{
@@ -33,7 +48,7 @@ function Download() {
               ></img>
             </Link>
           </Grid>
-          <Grid item xs={12}>
+          <Grid item xs={12} style={{ zIndex: "2" }}>
             <Link
               href="https://play.google.com/store/apps?pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"
               style={{
@@ -52,7 +67,7 @@ function Download() {
             </Link>
           </Grid>
         </Grid>
-        <Grid item xs={12} md={6}>
+        <Grid item xs={12} md={6} style={{ zIndex: "2" }}>
           <img
             src={back}
             alt="phone back"

@@ -7,8 +7,8 @@ import skill from "../resources/skill.png";
 function Banner() {
   return (
     <div className="App">
-      <Grid container style={{ margin: "25px auto" }}>
-        <Grid item xs={12} style={{ margin: "50px" }}>
+      <Grid container style={{ margin: "115px auto" }}>
+        <Grid item xs={12}>
           <Typography variant="h5">Experience booking differently</Typography>
           <Typography variant="subtitle1">
             We Gather the .... Dive site & centre
