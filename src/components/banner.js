@@ -1,4 +1,4 @@
-import { Card, Grid, Typography } from "@mui/material";
+import { Box, Card, Grid, Typography } from "@mui/material";
 import choose from "../resources/choose.png";
 import snorkel from "../resources/snorkel-gear.png";
 import calendar from "../resources/calendar (1).png";
@@ -6,8 +6,12 @@ import skill from "../resources/skill.png";
 
 function Banner() {
   return (
-    <div className="App">
-      <Grid container style={{ margin: "115px auto" }}>
+    <Box
+      style={{
+        zindex: "2",
+      }}
+    >
+      <Grid container>
         <Grid item xs={12}>
           <Typography variant="h5">Experience booking differently</Typography>
           <Typography variant="subtitle1">
@@ -20,7 +24,7 @@ function Banner() {
             <img
               src={choose}
               alt="pick dive sites"
-              style={{ width: "25%" }}
+              style={{ width: "25%", margin: "auto 25px" }}
             ></img>
             <Typography>Pick Preffered Dive Sites</Typography>
             <Typography>
@@ -63,7 +67,7 @@ function Banner() {
           </Card>
         </Grid>
       </Grid>
-    </div>
+    </Box>
   );
 }
 

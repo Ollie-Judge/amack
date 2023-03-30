@@ -1,12 +1,12 @@
-import { Grid, Link, Typography } from "@mui/material";
+import { Box, Grid, Link, Typography } from "@mui/material";
 import front from "../resources/mobile amack1.png";
 import back from "../resources/mobile amack.png";
 import background from "../resources/4k-sea-waves-on-the-beautiful-aerial-view-drone-2021-10-21-17-22-57-utc_Slomoss.mp4";
 
 function Download() {
   return (
-    <div className="App">
-      <Grid container style={{ margin: "15px auto 100px" }}>
+    <Box>
+      <Grid container>
         <Grid item xs={12} style={{ position: "absolute", zIndex: "1" }}>
           <video
             loop
@@ -14,23 +14,25 @@ function Download() {
             muted
             style={{
               width: "100%",
-              borderTopLeftRadius: "-40% -30px",
-              borderTopRightRadius: "-40% -30px",
             }}
           >
             <source src={background} type="video/mp4" />
           </video>
         </Grid>
-        <Grid item xs={12} md={6} style={{ zIndex: "2" }}>
-          <Grid item xs={12} style={{ textAlign: "left" }}>
-            <Typography variant="h5">
+        <Grid item xs={12} md={6} style={{ zIndex: "2", padding: "5em" }}>
+          <Grid
+            item
+            xs={12}
+            style={{ textAlign: "left", marginBottom: "25px" }}
+          >
+            <Typography variant="h5" style={{ color: "white" }}>
               Download and share your experience
             </Typography>
-            <Typography variant="subtitle1">
+            <Typography variant="subtitle1" style={{ color: "white" }}>
               Download our app and and share your experience
             </Typography>
           </Grid>
-          <Grid item xs={12} style={{ zIndex: "2" }}>
+          <Grid item xs={12} style={{ zIndex: "2", textAlign: "left" }}>
             <Link
               href="https://apps.apple.com/us/app/google/id284815942?itsct=apps_box_badge&amp;itscg=30200"
               style={{
@@ -44,11 +46,15 @@ function Download() {
               <img
                 src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83&amp;releaseDate=1549929600"
                 alt="Download on the App Store"
-                style={{ borderRadius: "13px", width: "250px", height: "83px" }}
+                style={{
+                  borderRadius: "13px",
+                  width: "250px",
+                  height: "83px",
+                }}
               ></img>
             </Link>
           </Grid>
-          <Grid item xs={12} style={{ zIndex: "2" }}>
+          <Grid item xs={12} style={{ zIndex: "2", textAlign: "left" }}>
             <Link
               href="https://play.google.com/store/apps?pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"
               style={{
@@ -62,12 +68,16 @@ function Download() {
               <img
                 alt="Get it on Google Play"
                 src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
-                style={{ borderRadius: "13px", width: "250px", height: "83px" }}
+                style={{
+                  borderRadius: "13px",
+                  width: "250px",
+                  height: "83px",
+                }}
               ></img>
             </Link>
           </Grid>
         </Grid>
-        <Grid item xs={12} md={6} style={{ zIndex: "2" }}>
+        <Grid item xs={12} md={6} style={{ zIndex: "2", padding: "6em" }}>
           <img
             src={back}
             alt="phone back"
@@ -94,7 +104,7 @@ function Download() {
           ></img>
         </Grid>
       </Grid>
-    </div>
+    </Box>
   );
 }
 

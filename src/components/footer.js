@@ -1,11 +1,11 @@
 import "../style/footer.css";
-import { Grid, Link, TextField, Typography, Button } from "@mui/material";
+import { Grid, Link, TextField, Typography, Button, Box } from "@mui/material";
 import background from "../resources/4k-sea-waves-on-the-beautiful-aerial-view-drone-2021-10-21-17-22-57-utc_Slomoss.mp4";
 
 function Footer() {
   return (
-    <div className="App">
-      <Grid container style={{ margin: "50px auto" }}>
+    <Box>
+      <Grid container>
         <Grid item xs={12} style={{ position: "absolute", zIndex: "1" }}>
           <video loop autoPlay muted style={{ width: "100%", opacity: "0.9" }}>
             <source src={background} type="video/mp4" />
@@ -65,7 +65,7 @@ function Footer() {
           <Typography variant="h6">Your Dives</Typography>
         </Grid>
       </Grid>
-    </div>
+    </Box>
   );
 }
 

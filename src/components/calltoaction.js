@@ -1,9 +1,9 @@
-import { Button, Grid, TextField, Typography } from "@mui/material";
+import { Box, Button, Grid, TextField, Typography } from "@mui/material";
 
 function App() {
   return (
-    <div className="App">
-      <Grid container style={{ margin: "250px auto" }}>
+    <Box>
+      <Grid container>
         <Grid item xs={12} md={6}>
           <Grid item xs={12}>
             <TextField
@@ -59,7 +59,7 @@ function App() {
           </Grid>
         </Grid>
       </Grid>
-    </div>
+    </Box>
   );
 }
 

@@ -6,13 +6,14 @@ import {
   TextField,
   IconButton,
   Rating,
+  Box,
 } from "@mui/material";
 import QuestionMarkIcon from "@mui/icons-material/QuestionMark";
 
 function Reviews() {
   return (
-    <div className="App">
-      <Grid container style={{ margin: "200px auto" }}>
+    <Box>
+      <Grid container>
         <Grid item xs={12}>
           <Typography variant="h4">Reviews</Typography>
         </Grid>
@@ -105,7 +106,7 @@ function Reviews() {
           </Card>
         </Grid>
       </Grid>
-    </div>
+    </Box>
   );
 }
 

@@ -1,11 +1,11 @@
-import { Grid, Typography } from "@mui/material";
+import { Box, Grid, Typography } from "@mui/material";
 import gear from "../resources/red-diving-storage-box-01-04867-3eKGs.png";
 
 function Slogan() {
   return (
-    <div className="App">
-      <Grid container style={{ margin: "100px auto" }}>
-        <Grid item xs={12} md={5}>
+    <Box>
+      <Grid container>
+        <Grid item xs={12} md={6} style={{ paddingTop: "10em" }}>
           <Typography variant="h6">Elevate your diving experience</Typography>
           <Typography variant="subtitle1">
             we are elevating your dive experience by reducing .... dives,
@@ -17,11 +17,11 @@ function Slogan() {
           <img
             alt="diving gear"
             src={gear}
-            style={{ width: "100%", zindex: "2" }}
+            style={{ width: "75%", zindex: "2" }}
           ></img>
         </Grid>
       </Grid>
-    </div>
+    </Box>
   );
 }
 

@@ -1,31 +1,33 @@
-import { Typography, Button, Grid } from "@mui/material";
+import { Typography, Button, Grid, Box, CardMedia } from "@mui/material";
 import "../style/header.css";
 import background from "../resources/4k-sea-waves-on-the-beautiful-aerial-view-drone-2021-10-21-17-22-57-utc_Slomoss.mp4";
 
 function Header() {
   return (
-    <div className="App">
-      <Grid container alignItems="center">
-        <video
-          loop
-          autoPlay
-          muted
-          style={{
-            position: "absolute",
-            zIndex: "1",
-            width: "100%",
-            borderBottomLeftRadius: "40% 30px",
-            borderBottomRightRadius: "40% 30px",
-          }}
-        >
-          <source src={background} type="video/mp4" />
-        </video>
+    <Box
+      style={{
+        textAlign: "center",
+        position: "relative",
+      }}
+    >
+      <CardMedia
+        component="video"
+        autoPlay
+        muted
+        loop
+        image={background}
+        style={{
+          zIndex: "1",
+          borderBottomLeftRadius: "40% 30px",
+          borderBottomRightRadius: "40% 30px",
+        }}
+      />
+      <Grid container style={{ top: "0", position: "absolute" }}>
         <Grid
           item
           xs={12}
           style={{
             margin: "150px auto",
-            textAlign: "center",
             zIndex: "2",
           }}
         >
@@ -38,9 +40,9 @@ function Header() {
           item
           xs={12}
           style={{
+            zIndex: "2",
             align: "center",
             margin: "auto",
-            zIndex: "2",
           }}
         >
           <Typography variant="subtitle1" className="headerText">
@@ -67,8 +69,8 @@ function Header() {
             variant="outlined"
             style={{
               borderRadius: "25px",
-              textAlign: "center",
               zIndex: "2",
+              textAlign: "center",
               color: "white",
             }}
           >
@@ -76,7 +78,7 @@ function Header() {
           </Button>
         </Grid>
       </Grid>
-    </div>
+    </Box>
   );
 }
 

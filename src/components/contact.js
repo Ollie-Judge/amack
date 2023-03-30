@@ -1,4 +1,5 @@
 import {
+  Box,
   Button,
   Card,
   CardContent,
@@ -9,8 +10,8 @@ import {
 
 function Contact() {
   return (
-    <div className="App">
-      <Grid container style={{ margin: "50px auto" }}>
+    <Box>
+      <Grid container>
         <Grid item xs={12} md={6}>
           <Grid item xs={12}>
             <Typography variant="h5">Contact & feedback</Typography>
@@ -67,7 +68,7 @@ function Contact() {
           </Card>
         </Grid>
       </Grid>
-    </div>
+    </Box>
   );
 }
 
