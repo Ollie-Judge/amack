@@ -39,7 +39,7 @@ function Contact() {
         <Grid item xs={12} md={6}>
           <Card>
             <CardContent>
-              <Grid item xs={6}>
+              <Grid item>
                 <TextField
                   id="outlined-basic"
                   label="Email"
@@ -52,7 +52,12 @@ function Contact() {
                 />
               </Grid>
               <Grid xs={12}>
-                <TextField id="outlined-basic" label="" variant="outlined" />
+                <TextField
+                  id="outlined-basic"
+                  label=""
+                  variant="outlined"
+                  style={{ width: "100%", height: "100%" }}
+                />
               </Grid>
               <Button
                 variant="contained"

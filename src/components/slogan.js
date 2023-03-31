@@ -5,7 +5,7 @@ function Slogan() {
   return (
     <Box>
       <Grid container>
-        <Grid item xs={12} md={6} style={{ paddingTop: "10em" }}>
+        <Grid item xs={12} md={6} style={{ paddingTop: "8%" }}>
           <Typography variant="h6">Elevate your diving experience</Typography>
           <Typography variant="subtitle1">
             we are elevating your dive experience by reducing .... dives,

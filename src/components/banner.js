@@ -7,8 +7,10 @@ import skill from "../resources/skill.png";
 function Banner() {
   return (
     <Box
+      xs={12}
       style={{
-        zindex: "2",
+        zindex: "5",
+        width: "100%",
       }}
     >
       <Grid container>

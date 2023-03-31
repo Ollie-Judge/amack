@@ -1,11 +1,10 @@
-import { Box, Grid, Link, Typography } from "@mui/material";
-import front from "../resources/mobile amack1.png";
-import back from "../resources/mobile amack.png";
+import { Grid, Link, Typography, Box } from "@mui/material";
 import background from "../resources/4k-sea-waves-on-the-beautiful-aerial-view-drone-2021-10-21-17-22-57-utc_Slomoss.mp4";
+import PhoneImage from "./image";
 
 function Download() {
   return (
-    <Box>
+    <Box style={{ zIndex: "4" }}>
       <Grid container>
         <Grid item xs={12} style={{ position: "absolute", zIndex: "1" }}>
           <video
@@ -78,30 +77,7 @@ function Download() {
           </Grid>
         </Grid>
         <Grid item xs={12} md={6} style={{ zIndex: "2", padding: "6em" }}>
-          <img
-            src={back}
-            alt="phone back"
-            style={{
-              position: "relative",
-              width: "250px",
-              height: "500px",
-              top: "0",
-              right: "0",
-              zIndex: "1",
-            }}
-          ></img>
-          <img
-            src={front}
-            alt="phone front"
-            style={{
-              position: "relative",
-              width: "250px",
-              height: "500px",
-              left: "-125px",
-              top: "-50px",
-              zIndex: "2",
-            }}
-          ></img>
+          <PhoneImage />
         </Grid>
       </Grid>
     </Box>

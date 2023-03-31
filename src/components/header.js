@@ -8,6 +8,7 @@ function Header() {
       style={{
         textAlign: "center",
         position: "relative",
+        height: "auto",
       }}
     >
       <CardMedia
@@ -18,8 +19,8 @@ function Header() {
         image={background}
         style={{
           zIndex: "1",
-          borderBottomLeftRadius: "40% 30px",
-          borderBottomRightRadius: "40% 30px",
+          borderBottomLeftRadius: "50% 40px",
+          borderBottomRightRadius: "50% 40px",
         }}
       />
       <Grid container style={{ top: "0", position: "absolute" }}>
@@ -38,11 +39,8 @@ function Header() {
 
         <Grid
           item
-          xs={12}
           style={{
             zIndex: "2",
-            align: "center",
-            margin: "auto",
           }}
         >
           <Typography variant="subtitle1" className="headerText">
