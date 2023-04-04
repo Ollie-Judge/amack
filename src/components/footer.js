@@ -6,34 +6,27 @@ function Footer() {
   return (
     <Box>
       <Grid container>
-        <Grid item xs={12} style={{ position: "absolute", zIndex: "1" }}>
-          <video
-            loop
-            autoPlay
-            muted
-            style={{
-              width: "100%",
-              opacity: "0.9",
-              borderTopLeftRadius: "50% 40px",
-              borderTopRightRadius: "50% 40px",
-            }}
-          >
-            <source src={background} type="video/mp4" />
-          </video>
-        </Grid>
-        <div
-          item
-          xs={12}
+        <video
+          loop
+          autoPlay
+          muted
           style={{
             position: "absolute",
-            Color: "blue",
-            opacity: "0.5",
-            zIndex: "3",
+            zIndex: "1",
+            width: "100%",
+            opacity: "0.9",
             borderTopLeftRadius: "50% 40px",
             borderTopRightRadius: "50% 40px",
           }}
-        ></div>
-        <Grid item xs={12} md={4} style={{ zIndex: "2", paddingTop: "150px" }}>
+        >
+          <source src={background} type="video/mp4" />
+        </video>
+        <Grid
+          item
+          xs={12}
+          md={4}
+          style={{ position: "relative", zIndex: "2", paddingTop: "150px" }}
+        >
           <Grid item xs={12} className="footerLinkSpacing">
             <Link href="#Contact" className="footerItem">
               Contact us

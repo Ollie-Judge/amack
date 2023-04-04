@@ -11,6 +11,7 @@ function Banner() {
       style={{
         zindex: "5",
         width: "100%",
+        marginBottom: "25px",
       }}
     >
       <Grid container>

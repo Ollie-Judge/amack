@@ -10,7 +10,7 @@ import {
 
 function Contact() {
   return (
-    <Box>
+    <Box style={{ margin: "25px auto" }}>
       <Grid container>
         <Grid item xs={12} md={6}>
           <Grid item xs={12}>

@@ -11,6 +11,7 @@ function FishRight() {
             autoPlay
             muted
             style={{
+              height: "75%",
               width: "100%",
               zindex: "1",
               borderTopLeftRadius: "70% 50px",

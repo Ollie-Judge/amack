@@ -76,7 +76,12 @@ function Download() {
             </Link>
           </Grid>
         </Grid>
-        <Grid item xs={12} md={6} style={{ zIndex: "2", padding: "6em" }}>
+        <Grid
+          item
+          xs={12}
+          md={6}
+          style={{ zIndex: "2", paddingTop: "6em", paddingLeft: "6em" }}
+        >
           <PhoneImage />
         </Grid>
       </Grid>

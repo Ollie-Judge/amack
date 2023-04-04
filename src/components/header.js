@@ -7,7 +7,6 @@ function Header() {
     <Box
       style={{
         textAlign: "center",
-        position: "relative",
         height: "auto",
       }}
     >
@@ -17,7 +16,9 @@ function Header() {
         muted
         loop
         image={background}
+        maxHeight={false}
         style={{
+          width: "100%",
           zIndex: "1",
           borderBottomLeftRadius: "50% 40px",
           borderBottomRightRadius: "50% 40px",
@@ -41,6 +42,8 @@ function Header() {
           item
           style={{
             zIndex: "2",
+            paddingLeft: "35%",
+            marginBottom: "50px",
           }}
         >
           <Typography variant="subtitle1" className="headerText">

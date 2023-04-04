@@ -2,7 +2,7 @@ import { Box, Button, Grid, TextField, Typography } from "@mui/material";
 
 function App() {
   return (
-    <Box>
+    <Box style={{ margin: "15px auto" }}>
       <Grid container>
         <Grid item xs={12} md={6}>
           <Grid item xs={12}>

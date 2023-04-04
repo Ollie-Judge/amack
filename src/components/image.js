@@ -12,7 +12,7 @@ function PhoneImage() {
             alt="phone front"
             style={{
               position: "relative",
-              width: "10em",
+              width: "16vw",
               height: "auto",
               zIndex: "4",
             }}
@@ -22,7 +22,7 @@ function PhoneImage() {
             alt="phone back"
             style={{
               position: "relative",
-              width: "10em",
+              width: "16vw",
               height: "auto",
               left: "-50%",
               top: "-40%",
