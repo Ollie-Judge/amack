@@ -1,6 +1,7 @@
 import { Typography, Button, Grid, Box, CardMedia } from "@mui/material";
 import "../style/header.css";
 import background from "../resources/4k-sea-waves-on-the-beautiful-aerial-view-drone-2021-10-21-17-22-57-utc_Slomoss.mp4";
+import "../resources/FindetNemo-KVxD.ttf";
 
 function Header() {
   return (
@@ -16,15 +17,15 @@ function Header() {
         muted
         loop
         image={background}
-        maxHeight={false}
         style={{
+          position: "absolute",
           width: "100%",
           zIndex: "1",
           borderBottomLeftRadius: "50% 40px",
           borderBottomRightRadius: "50% 40px",
         }}
       />
-      <Grid container style={{ top: "0", position: "absolute" }}>
+      <Grid container style={{ top: "0" }}>
         <Grid
           item
           xs={12}
@@ -33,7 +34,12 @@ function Header() {
             zIndex: "2",
           }}
         >
-          <Typography variant="h2" style={{ color: "white" }}>
+          <Typography
+            variant="h2"
+            style={{
+              color: "white",
+            }}
+          >
             Amack
           </Typography>
         </Grid>

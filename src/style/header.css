@@ -1,3 +1,8 @@
+h2 {
+  font-family: "Nemo";
+  text-decoration: "underline";
+}
+
 .headerText {
   color: white;
   text-align: left;

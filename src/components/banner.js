@@ -11,7 +11,6 @@ function Banner() {
       style={{
         zindex: "5",
         width: "100%",
-        marginBottom: "25px",
       }}
     >
       <Grid container>
@@ -70,6 +69,15 @@ function Banner() {
           </Card>
         </Grid>
       </Grid>
+      <svg
+        width="100%"
+        height="80"
+        viewBox="0 0 500 80"
+        preserveAspectRatio="none"
+        style={{ zIndex: "6" }}
+      >
+        <path d="M0,0 L0,40 Q250,80 500,40 L500,0 Z" fill="white" />
+      </svg>
     </Box>
   );
 }
